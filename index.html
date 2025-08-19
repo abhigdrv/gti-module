@@ -3,238 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page - HTML1</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #667eea;
-        }
-        .header h1 {
-            color: #333;
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .my-content {
-            background: #f8f9fa;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            border-left: 4px solid #28a745;
-        }
-        .loaded-section {
-            margin: 20px 0;
-            padding: 20px;
-            border: 2px solid #667eea;
-            border-radius: 10px;
-            background: linear-gradient(45deg, #f8f9ff, #ffffff);
-        }
-        .loaded-section h3 {
-            margin-top: 0;
-            color: #667eea;
-            font-size: 1.3em;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 8px;
-        }
-        .controls {
-            text-align: center;
-            margin: 30px 0;
-        }
-        button {
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-        button:hover {
-            background: #5a6fd8;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-        .error {
-            background: #f8d7da;
-            color: #721c24;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 15px 0;
-            border: 1px solid #f5c6cb;
-        }
-        .loading {
-            text-align: center;
-            color: #667eea;
-            font-style: italic;
-            padding: 20px;
-        }
-    </style>
+    <title>HTML</title>
+    <link rel="stylesheet" href="submodule/style.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Welcome to My Main Page</h1>
-            <p>This is HTML1 - the main file that loads content from HTML2</p>
-        </div>
-
-        <div class="my-content">
-            <h2>Original Content from HTML1</h2>
-            <p>This content belongs to the main file (HTML1). It includes my own navigation, header, and some initial content.</p>
-            <p>Below, I'll load specific sections from HTML2 file dynamically.</p>
-        </div>
-
-        <div class="controls">
-            <button onclick="loadSectionsFromHtml2()">Load Sections from HTML2</button>
-        </div>
-
-        <div id="loadedContent">
-            <!-- Sections from HTML2 will be loaded here -->
-        </div>
+        <header id="page-header">
+            <h1>🚀 Complete Source Page</h1>
+            <p>This is the source file containing various sections that can be loaded into other pages</p>
+        </header>
+        
+        <section id="product-info">
+            <h2>📱 Revolutionary Product</h2>
+            <p>Introducing our groundbreaking solution that revolutionizes how you work, collaborate, and achieve your goals. Built with cutting-edge technology and user-centric design.</p>
+            <ul>
+                <li>✨ Intuitive drag-and-drop interface</li>
+                <li>⚡ Lightning-fast performance with 99.9% uptime</li>
+                <li>🔒 Enterprise-grade security and encryption</li>
+                <li>🌍 Available in 25+ languages worldwide</li>
+                <li>📞 24/7 premium customer support</li>
+            </ul>
+            <p><strong>Trusted by over 10,000+ companies worldwide!</strong></p>
+        </section>
+        
+        <section id="testimonials">
+            <h2>💬 Customer Success Stories</h2>
+            <blockquote>
+                "This product completely transformed our team's productivity. We've seen a 300% increase in efficiency!" 
+                <br><strong>- Sarah Johnson, CEO of TechCorp</strong>
+            </blockquote>
+            <blockquote>
+                "The best investment we've made for our business. ROI was visible within the first month." 
+                <br><strong>- Michael Rodriguez, Operations Director</strong>
+            </blockquote>
+            <blockquote>
+                "Outstanding support team and incredible features. Couldn't imagine working without it now." 
+                <br><strong>- Emma Chen, Project Manager</strong>
+            </blockquote>
+        </section>
+        
+        <section id="features">
+            <h2>🎯 Key Features & Benefits</h2>
+            <div class="feature-grid">
+                <div class="feature-item" style="background: #e3f2fd;">
+                    <h4>📊 Advanced Analytics</h4>
+                    <p>Real-time insights and detailed reporting dashboard</p>
+                </div>
+                <div class="feature-item" style="background: #e8f5e8;">
+                    <h4>🔄 Real-time Sync</h4>
+                    <p>Instant synchronization across all devices and platforms</p>
+                </div>
+                <div class="feature-item" style="background: #fff3e0;">
+                    <h4>☁️ Cloud Storage</h4>
+                    <p>Unlimited secure cloud storage with automatic backups</p>
+                </div>
+                <div class="feature-item" style="background: #fce4ec;">
+                    <h4>📱 Mobile Ready</h4>
+                    <p>Fully responsive design works perfectly on any device</p>
+                </div>
+                <div class="feature-item" style="background: #f3e5f5;">
+                    <h4>🔐 Security First</h4>
+                    <p>End-to-end encryption and compliance with industry standards</p>
+                </div>
+                <div class="feature-item" style="background: #e0f2f1;">
+                    <h4>🤝 Team Collaboration</h4>
+                    <p>Advanced tools for seamless team communication</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>📞 Get In Touch</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div>
+                    <h3>Contact Information</h3>
+                    <p>📧 <strong>Email:</strong> hello@awesomeproduct.com</p>
+                    <p>📞 <strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p>💬 <strong>Live Chat:</strong> Available 24/7</p>
+                    <p>🏢 <strong>Address:</strong> 123 Innovation Drive, Tech City, TC 12345</p>
+                </div>
+                <div>
+                    <h3>Business Hours</h3>
+                    <p>🕘 <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+                    <p>🕘 <strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                    <p>🕘 <strong>Sunday:</strong> Closed</p>
+                    <p>🌐 <strong>Online Support:</strong> 24/7</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="pricing">
+            <h2>💰 Pricing Plans</h2>
+            <p>Choose the perfect plan for your needs - all plans include a 30-day free trial!</p>
+            <div class="pricing-table">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <div style="font-size: 2em; color: #27ae60; margin: 15px 0;">$9<span style="font-size: 0.5em;">/month</span></div>
+                    <ul style="text-align: left;">
+                        <li>Up to 5 users</li>
+                        <li>10GB storage</li>
+                        <li>Basic features</li>
+                        <li>Email support</li>
+                    </ul>
+                </div>
+                <div class="price-card" style="border: 3px solid #667eea;">
+                    <h3>Professional</h3>
+                    <div style="font-size: 2em; color: #667eea; margin: 15px 0;">$29<span style="font-size: 0.5em;">/month</span></div>
+                    <ul style="text-align: left;">
+                        <li>Up to 50 users</li>
+                        <li>100GB storage</li>
+                        <li>All features</li>
+                        <li>Priority support</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Enterprise</h3>
+                    <div style="font-size: 2em; color: #e74c3c; margin: 15px 0;">$99<span style="font-size: 0.5em;">/month</span></div>
+                    <ul style="text-align: left;">
+                        <li>Unlimited users</li>
+                        <li>Unlimited storage</li>
+                        <li>Custom integrations</li>
+                        <li>Dedicated support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <footer id="page-footer" style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee;">
+            <p>&copy; 2024 Awesome Product Inc. All rights reserved. | This is HTML2 source content</p>
+        </footer>
     </div>
-
-    <script>
-        async function loadSectionsFromHtml2() {
-            const loadedContent = document.getElementById('loadedContent');
-            loadedContent.innerHTML = '<div class="loading">Loading sections from HTML2...</div>';
-
-            try {
-                // In a real scenario, you would fetch from 'html2.html'
-                // For demo purposes, we'll simulate the HTML2 content
-                const html2Content = getHtml2Content();
-                
-                // Parse the HTML content
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html2Content, 'text/html');
-                
-                // Define which sections to load from HTML2
-                const sectionsToLoad = [
-                    { selector: '#product-info', title: 'Product Information' },
-                    { selector: '#testimonials', title: 'Customer Testimonials' },
-                    { selector: '#features', title: 'Key Features' }
-                ];
-                
-                let outputHtml = '';
-                
-                sectionsToLoad.forEach(section => {
-                    const element = doc.querySelector(section.selector);
-                    if (element) {
-                        outputHtml += `
-                            <div class="loaded-section">
-                                <h3>${section.title} (from HTML2)</h3>
-                                ${element.innerHTML}
-                            </div>
-                        `;
-                    }
-                });
-                
-                if (outputHtml === '') {
-                    outputHtml = '<p>No sections found in HTML2.</p>';
-                }
-                
-                loadedContent.innerHTML = outputHtml;
-                
-            } catch (error) {
-                loadedContent.innerHTML = `
-                    <div class="error">
-                        <strong>Error:</strong> Could not load sections from HTML2. ${error.message}
-                    </div>
-                `;
-            }
-        }
-
-        // Simulated HTML2 content (in real scenario, this would be fetched from html2.html)
-        function getHtml2Content() {
-            return `
-                <!DOCTYPE html>
-                <html>
-                <head><title>HTML2 - Source File</title></head>
-                <body>
-                    <header id="page-header">
-                        <h1>HTML2 Source Page</h1>
-                    </header>
-                    
-                    <section id="product-info">
-                        <h2>Amazing Product</h2>
-                        <p>Our revolutionary product changes everything you know about productivity.</p>
-                        <ul>
-                            <li>Easy to use interface</li>
-                            <li>Lightning fast performance</li>
-                            <li>24/7 customer support</li>
-                        </ul>
-                    </section>
-                    
-                    <section id="testimonials">
-                        <h2>What Our Customers Say</h2>
-                        <blockquote>
-                            "This product transformed my workflow completely!" - Sarah J.
-                        </blockquote>
-                        <blockquote>
-                            "Best investment I've made for my business." - Mike R.
-                        </blockquote>
-                    </section>
-                    
-                    <section id="features">
-                        <h2>Key Features</h2>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                            <div style="padding: 10px; background: #e3f2fd; border-radius: 5px;">
-                                <strong>Feature 1:</strong> Advanced Analytics
-                            </div>
-                            <div style="padding: 10px; background: #e8f5e8; border-radius: 5px;">
-                                <strong>Feature 2:</strong> Real-time Sync
-                            </div>
-                            <div style="padding: 10px; background: #fff3e0; border-radius: 5px;">
-                                <strong>Feature 3:</strong> Cloud Storage
-                            </div>
-                            <div style="padding: 10px; background: #fce4ec; border-radius: 5px;">
-                                <strong>Feature 4:</strong> Mobile Ready
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section id="pricing">
-                        <h2>Pricing Plans</h2>
-                        <p>Choose the plan that works best for you.</p>
-                    </section>
-                </body>
-                </html>
-            `;
-        }
-
-        // For real implementation with separate files:
-        async function loadFromRealFile() {
-            try {
-                const response = await fetch('html2.html');
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const htmlContent = await response.text();
-                
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(htmlContent, 'text/html');
-                
-                // Extract sections as shown above
-                
-            } catch (error) {
-                console.error('Error loading HTML2:', error);
-            }
-        }
-    </script>
 </body>
 </html>
